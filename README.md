@@ -17,7 +17,6 @@ It detects **doomscrolling patterns**, suggests **mindful breaks**, rewards **of
 ## 🛠️ Tech Stack  
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend (future scope):** Node.js / Express  
-- **AI/ML (future scope):** Pattern recognition for detecting doomscrolling  
 - **Version Control:** Git & GitHub  
 
 ---
