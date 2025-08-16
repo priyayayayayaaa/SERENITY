@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Serenify</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background-color: #f8fff8;
+    }
+
+    header {
+      background: white;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    header h1 {
+      color: green;
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+    nav a.active {
+      color: green;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1; /* pushes footer down */
+      padding: 40px 80px;
+    }
+
+    .contact-section {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact-section h2 {
+      color: green;
+      margin-bottom: 15px;
+    }
+
+    .contact-section label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .contact-section input,
+    .contact-section textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+    }
+
+    .contact-section button {
+      background: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .motivation {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-style: italic;
+      background: #e9ffe9;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Serenify</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="features.html">Features</a>
+      <a href="how.html">How It Works</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a href="signup.html">
+      <button style="background:green;color:white;padding:10px 20px;border:none;border-radius:5px;">Get Started</button>
+    </a>
+  </header>
+
+  <main>
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Reach out for feedback, support, or collaborations.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" placeholder="Write your message..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Motivation / Inspiration -->
+    <section class="motivation" id="motivation">
+      🌱 "Take a deep breath. Progress, not perfection." 🌱
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong style="color:green;">Serenify</strong><br>
+      Your AI-powered digital well-being companion for mindful living.
+    </div>
+    <div>
+      © 2025 Serenify. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    // Quotes that change every 2 minutes
+    const quotes = [
+      "🌱 Take a deep breath. Progress, not perfection.",
+      "🌟 Small steps every day build big results.",
+      "💡 A calm mind brings inner strength and self-confidence.",
+      "🌸 Focus on being productive, not busy.",
+      "🔥 Believe you can, and you're halfway there."
+    ];
+
+    let index = 0;
+    const motivationBox = document.getElementById("motivation");
+
+    setInterval(() => {
+      index = (index + 1) % quotes.length;
+      motivationBox.innerHTML = quotes[index];
+    }, 120000); // 2 minutes
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works | Serenify</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f9fff9;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Navbar */
+    header {
+      background: #fff;
+      padding: 15px 50px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      flex: 1;
+    }
+    .nav-links li a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #333;
+      transition: color 0.3s;
+    }
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      color: #27ae60;
+    }
+    .btn {
+      background: #27ae60;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #219150;
+    }
+
+    /* How It Works Section */
+    .how-it-works {
+      flex: 1;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .how-it-works h2 {
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #2ecc71;
+      font-weight: bold;
+    }
+    .features-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .feature-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease;
+      text-align: left;
+    }
+    .feature-card:hover {
+      transform: translateY(-8px);
+    }
+    .feature-card img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+    .feature-card h3 {
+      margin-bottom: 10px;
+      color: #27ae60;
+    }
+    .feature-card p {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="logo">Serenify</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="howitworks.html" class="active">How it Works</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="signup.html" class="btn">Get Started</a>
+    </div>
+  </header>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2>✨ How Serenify Transforms Your Digital Life ✨</h2>
+
+      <div class="features-row">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="AI Detection">
+          <h3>🤖 Smart AI Detection</h3>
+          <p><strong>What it does:</strong> Tracks your scrolling and app usage patterns.</p>
+          <p><strong>How it helps:</strong> Stops you from falling into endless doom-scrolling traps and reminds you to refocus.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3448/3448565.png" alt="Mindful Breaks">
+          <h3>🌱 Mindful Breaks</h3>
+          <p><strong>What it does:</strong> Suggests breathing exercises, stretching, or short meditations.</p>
+          <p><strong>How it helps:</strong> Refreshes your mind, reduces stress, and prevents burnout.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Rewards">
+          <h3>🏆 Positive Rewards</h3>
+          <p><strong>What it does:</strong> Gives you points and badges for choosing healthier offline activities.</p>
+          <p><strong>How it helps:</strong> Motivates you to balance your screen time with real-life experiences.</p>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="features-row">
+        <!-- Feature 4 -->
+        <div class="feature-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Personalized Insights">
+          <h3>📊 Personalized Insights</h3>
+          <p><strong>What it does:</strong> Analyzes your weekly habits and gives detailed reports.</p>
+          <p><strong>How it helps:</strong> Lets you see where time is slipping away and helps you make mindful adjustments.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Custom Reminders">
+          <h3>⏰ Custom Reminders</h3>
+          <p><strong>What it does:</strong> Lets you set gentle reminders to log off or switch tasks.</p>
+          <p><strong>How it helps:</strong> Keeps your schedule on track without feeling forced or overwhelming.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Community Support">
+          <h3>🤝 Community Support</h3>
+          <p><strong>What it does:</strong> Connects you with a like-minded community on the same journey.</p>
+          <p><strong>How it helps:</strong> Keeps you accountable, inspired, and motivated to continue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Serenify. All rights reserved.</p>
+  </footer>
+</body>
+</html>

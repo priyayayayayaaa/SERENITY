@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Serenify</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #f0fff4, #e6f7ff);
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* pushes footer down */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      color: #28a745;
+      font-size: 26px;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #28a745;
+    }
+
+    .btn {
+      background: #28a745;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #218838;
+    }
+
+    /* Signup Section */
+    .signup-container {
+      flex: 1; /* pushes footer down */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .signup-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .signup-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #28a745;
+    }
+
+    .signup-box label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .signup-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      transition: border 0.3s ease;
+    }
+
+    .signup-box input:focus {
+      border: 1px solid #28a745;
+    }
+
+    .signup-box button {
+      width: 100%;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #eee;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      flex-wrap: wrap;
+    }
+
+    footer h3 {
+      margin: 0 0 10px 0;
+      color: #28a745;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Serenify</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="btn">Get Started</button>
+  </header>
+
+  <div class="signup-container">
+    <div class="signup-box">
+      <h2>Create Your Serenify Account</h2>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" class="btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <h3>Serenify</h3>
+      <p>Your AI-powered digital well-being companion for mindful digital living.</p>
+    </div>
+    <div>
+      <p>© 2025 Serenify. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
